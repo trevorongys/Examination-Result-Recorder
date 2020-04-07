@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="uts-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Result Recorder</title>
+	<link rel="stylesheet" href="/static/style.css" <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Slab&display=swap"
+	 rel="stylesheet">
+</head>
+
+<body>
+  <div class="center">
+	<h1>Result Recorder</h1>
+  </div>
+	<p class="two">Fill in your score.</p>
+	
+    <div class="sc">
+      <form action="{{ url_for("collector") }}"" method='POST'/>
+        <input type="radio" name="exam" id="ca1">
+          <label for="ca1">CA 1</label>
+          <br>
+          <input type="radio" name="exam" id="mye">
+          <label for="mye">Mid-year Examination</label>
+          <br>
+          <input type="radio" name="exam" id="ca2">
+          <label for="ca2">CA 2</label>
+          <br>
+          <input type="radio" name="exam" id="promo">
+          <label for="promo">Promotional Examination</label>
+          <br /><br />
+          <hr>
+          <br>
+        <label for="GP">General Paper: </label>
+            <input type="text" placeholder="" name="gp" />
+            <br /><br />
+          <label for="PW">Project Work: </label>
+            <input type="text" placeholder="" name="pw" />
+            <br /><br />
+          <label for="PH">Physics: </label>
+            <input type="text" placeholder="" name="ph" />
+            <br /><br />
+          <label for="MA">Mathematics: </label>
+            <input type="text" placeholder="" name="ma" />
+            <br /><br />
+          <button type="button" name ="cp" class="link" onclick="alert('Hello, World!')">Computing: </button>
+            <input type="text" placeholder="" name="cp" />
+            <br /><br />
+          <label for="EC">Economics: </label>
+            <input type="text" placeholder="" name="ec" />
+            <br /><br />
+        <div class="hide">
+          <label for="MT">Mother Tongue: </label>
+            <input type="text" placeholder="" name="mt" />
+            <br /><br />
+          <label for="BI">Biology: </label>
+            <input type="text" placeholder="" name="bi" />
+            <br /><br />
+          <label for="CH">Chemistry: </label>
+            <input type="text" placeholder="" name="ch" />
+            <br /><br />
+          <label for="ELL">English Language & Linguistics: </label>
+            <input type="text" placeholder="" name="ell" />
+            <br /><br />
+          <label for="GE">Geography: </label>
+            <input type="text" placeholder="" name="ge" />
+            <br /><br />
+          <label for="HI">History: </label>
+            <input type="text" placeholder="" name="hi" />
+            <br /><br />
+          <label for="AR">Art: </label>
+            <input type="text" placeholder="" name="ar" />
+            <br /><br />
+          <label for="OT">Other: </label>
+            <input type="text" placeholder="Enter Subject" name="ot" />
+          <label for="OTS"></label>
+            <input type="text" placeholder="Score" name="ots" />
+            <br /><br />
+          <label for="h1">H1 subject: </label>
+            <input type="text" placeholder="Enter H1 Subject" name="h1" />
+          <label for="h1s"></label>
+            <input type="text" placeholder="H1 Score" name="h1s" />
+            <br /><br />
+          <hr />
+          </div>
+
+          <div class="button">
+          <input type="submit" value="Submit"></input>
+          <input type="reset" value="Reset"></input>
+          <br><br>
+          <a href="https://recorder--harowo.repl.co/results">
+          <input type="button" value="Check Results and save to Google Drive"/>
+          </div>
+          
+</div>
+          
+      </form> 
+      
+
+    </div>
+	</body>
+</html>
